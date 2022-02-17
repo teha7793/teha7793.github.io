@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 5</title>
+  </head>
+  <body>
+
+
+    <div class="">
+    <h2>Challenge 2 - Build a Chessboard</h2>
+    <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-2cas{background-color:#000000;border-color:inherit;color:#202122;text-align:center;vertical-align:top}
+    .tg .tg-nr0l{background-color:#000000;color:#202122;text-align:center;vertical-align:top}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    .tg .tg-8m24{background-color:#000000;text-align:left;vertical-align:top}
+    .tg .tg-jwez{background-color:#F8F9FA;color:#202122;text-align:center;vertical-align:top}
+    .tg .tg-51xa{background-color:#000000;color:#333333;text-align:center;vertical-align:top}
+    </style>
+  <table class="tg">
+  <tbody>
+    <tr>
+      <td class="tg-2cas">♖</td>
+      <td class="tg-0lax">♘</td>
+      <td class="tg-8m24">♗</td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♕</span></td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal">♕</span></td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♗</span></td>
+      <td class="tg-8m24">♘</td>
+      <td class="tg-jwez">♖</td>
+    </tr>
+    <tr>
+      <td class="tg-0lax">♙</td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♙</span></td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal">♙</span></td>
+    </tr>
+    <tr>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+    </tr>
+    <tr>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+    </tr>
+    <tr>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+    </tr>
+    <tr>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+      <td class="tg-0lax"></td>
+      <td class="tg-8m24"></td>
+    </tr>
+    <tr>
+      <td class="tg-51xa">♟︎</td>
+      <td class="tg-jwez">♟︎</td>
+      <td class="tg-8m24">♟︎</td>
+      <td class="tg-0lax"><span style="font-weight:400;font-style:normal">♟︎</span></td>
+      <td class="tg-8m24"><span style="font-weight:400;font-style:normal;color:#333;background-color:#000">♟︎</span></td>
+      <td class="tg-0lax">♟︎</td>
+      <td class="tg-8m24">♟︎</td>
+      <td class="tg-0lax">♟︎</td>
+    </tr>
+    <tr>
+      <td class="tg-jwez">♜</td>
+      <td class="tg-8m24">♞</td>
+      <td class="tg-0lax">♝</td>
+      <td class="tg-nr0l">♛</td>
+      <td class="tg-0lax">♚</td>
+      <td class="tg-8m24">♝</td>
+      <td class="tg-0lax">♞</td>
+      <td class="tg-nr0l">♜</td>
+    </tr>
+  </tbody>
+  </table>
+    </div>
+
+    <div class="">
+      <h2>Challenge 3 - Create a Form</h2>
+      <form>
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="mname">Middle name:</label><br>
+        <input type="text" id="mname" name="mname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="btn">A button!</label><br>
+        <input type="button" name="btn" value=""><br>
+        <label for="chk">And a checkbox!!!</label><br>
+        <input type="checkbox" name="chk" value=""><br>
+
+      </form>
+    </div>
+      <div>
+        <p>https://www.colorado.edu › atlas</p>
+        <h2><a href="https://www.colorado.edu/atlas/" title="Atlas Website">ATLAS Institute | University of Colorado Boulder</a></h2>
+        <p><strong>ATLAS</strong> is an interdisciplinary <strong>institute</strong> for radical creativity and invention. We transform ingenious ideas into reality through research, ...</p>
+          <ul>
+            <li><h2><a href="https://www.colorado.edu/atlas/academics/grad" title="Graduate Degrees">Graduate Degrees in Creative ...</a></h2></li>
+            <li><p>Radically interdisciplinary, ATLAS graduate programs nurture ...</p></li>
+            <li><h2><a href="https://www.colorado.edu/atlas/faculty" title="Faculty">Faculty</a></h2></li>
+            <li><p>Lecturer, co-chair Board of Advisors • DESIGN, AR/VR ...</p></li>
+            <li><h2><a href="https://www.colorado.edu/atlas/about-atlas" title="About">About</a></h2></li>
+            <li><p>ATLAS is an interdisciplinary institute for radical creativity and ...</p></li>
+            <li><h2><a href="https://www.colorado.edu/atlas/academics" title="Academics">Academics</a></h2></li>
+            <li><p>Granted through the College of Engineering and Applied ...</p></li>
+            <li><a href="https://www.google.com/search?q=ATLAS+Institute+site:colorado.edu&amp;sa=X&amp;ved=2ahUKEwiojtfHmOz1AhUoIDQIHbcZCSIQrAN6BAgEEAE&amp;biw=1792&amp;bih=875&amp;dpr=2" title="More Results">More results from colorado.edu »</a></li>
+          </ul>
+          <br>
+            <p>https://www.colorado.edu › innovate › atlas-institute</p>
+            <h2><a href="https://www.colorado.edu/innovate/atlas-institute" title="ATLAS Website">ATLAS Institute | Innovation &amp; Entrepreneurship - University of ...</a></h2>
+            <p>Resource that sponsors diverse interdisciplinary academic and research programs, challenging community members to explore, innovate, create and design well ...</p>
+            <p>https://www.linkedin.com › school › atlas-cu-boulder</p>
+            <h2><a href="https://www.linkedin.com/school/atlas-cu-boulder/" title="ATLAS Website">ATLAS Institute at CU Boulder Employees, Location, Alumni</a></h2>
+            <p>ATLAS is an interdisciplinary institute for radical creativity and invention where ingenious ideas become reality. · ATLAS Institute at CU Boulder. View all open ...</p>
+          </br>
+        </div>
+
+    <div>
+      <h2>Challenge 5 - Accessibility</h2>
+      <form>
+        <p>None of the provided form options would be accessible to sightless people, since they all convey their information visually. People who do not have full use of their limbs, or who are missing limbs, would also have a hard time interacting with the form, since it may be hard to have a text to speech or other assistive system enter information into it. The form also does not support people who cannot read english, including people from countries that speak other languages, small children, and the otherwise illiterate. The button and checkbox are also rather small, and someone with a condition that impairs their fine motor skills, such as severe arthritis or parkinsons, might have difficulty positioning the mouse overtop these elements so as to click on them.</p>
+        <p><em>Part 3 - new tag is the mark tag, which highlights a given block of text. I found it through google</em></p>
+        <a href="https://www.w3schools.com/tags/tag_mark.asp">Source</a>
+      </form>
+    </div>
+  </body>
+</html>

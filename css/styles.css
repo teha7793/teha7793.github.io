@@ -1,51 +1,114 @@
-body {
-  background-color:#36584c;
+@media screen and (min-width:401px)
+{
+  .content
+  {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+  img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    background-color:#36584c;
+  }
+  h1 {
+    color:#ffffff;
+    font-style: bold;
+    font-size: 325%;
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+  }
+  h2 {
+    color:#c0c0c0;
+    font-style: bold;
+    font-size: 225%;
+    font-family:	"Helvetica", sans-serif;
+  }
+  p {
+    color:#ffffff;
+    font-size: 120%;
+    font-family: 	"Helvetica", sans-serif;
+  }
+  a {
+    color:#00bc78;
+    font-size: 120%;
+    font-family: "Helvetica", sans-serif;
+  }
+  li {
+    display: block;
+    padding: 10px;
+    background-color: #003e27;
+    border-style: solid;
+    border-color: #ffffff;
+    font-size: 100%;
+  }
+  ol {
+    margin: 1em;
+    padding: 1em;
+  }
+  hr {
+    display:block;
+    color:#ffffff;
+    margin-top: 0.7;
+    margin-bottom: 0.7;
+  }
 }
-
-h1 {
-  color:#ffffff;
-  font-style: bold;
-  font-size: 325%;
-  text-align: center;
-  font-family: "Helvetica", sans-serif;
-}
-
-h2 {
-  color:#c0c0c0;
-  font-style: bold;
-  font-size: 225%;
-  font-family:	"Helvetica", sans-serif;
-}
-
-p {
-  color:#ffffff;
-  font-size: 120%;
-  font-family: 	"Helvetica", sans-serif;
-}
-
-a {
-  color:#00bc78;
-  font-size: 120%;
-  font-family: "Helvetica", sans-serif;
-}
-
-li {
-  display: block;
-  padding: 10px;
-  background-color: #003e27;
-  border-style: solid;
-  border-color: #ffffff;
-  font-size: 100%;
-}
-
-ol {
-  margin: 1em;
-  padding: 1em;
-}
-
-hr {
-  display:block;
-  color:#ffffff;
-  margin-top: 0.7;
-  margin-bottom: 0.7;
+@media screen and (max-width:400px)
+{
+    .content
+    {
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+    }
+    img
+    {
+      max-width: 100%;
+      height: auto;
+    }
+  body {
+    background-color:#36584c;
+  }
+  h1 {
+    color:#ffffff;
+    font-style: bold;
+    font-size: 325%;
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+  }
+  h2 {
+    color:#c0c0c0;
+    font-style: bold;
+    font-size: 225%;
+    font-family:	"Helvetica", sans-serif;
+  }
+  p {
+    color:#ffffff;
+    font-size: 120%;
+    font-family: 	"Helvetica", sans-serif;
+  }
+  a {
+    color:#00bc78;
+    font-size: 120%;
+    font-family: "Helvetica", sans-serif;
+  }
+  li {
+    display: block;
+    padding: 10px;
+    background-color: #003e27;
+    border-style: solid;
+    border-color: #ffffff;
+    font-size: 100%;
+  }
+  ol {
+    margin: 1em;
+    padding: 1em;
+  }
+  hr {
+    display:block;
+    color:#ffffff;
+    margin-top: 0.7;
+    margin-bottom: 0.7;
+  }
 }

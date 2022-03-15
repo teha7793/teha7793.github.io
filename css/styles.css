@@ -1,19 +1,101 @@
-@media screen and (min-width:401px)
+@media screen and (min-width:801px)
 {
-  .content
+  .title-grid-container
   {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    column-gap: 1%;
+    row-gap: 0px;
+    padding-left: 5%;
+    margin-right: 5%;
+  }
+  .grid-container
+  {
+
+    display: grid;
+    column-gap: 1%;
+    row-gap: 0px;
+    padding-left: 2%;
+    margin-right: 2%;
+  }
+  .item1
+  {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  }
+  .item2
+  {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  }
+  .item3
+  {
+  text-align: right;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  }
+  .item4
+  {
+  text-align: right;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  }
+  .item5
+  {
+  max-height: 100%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  padding-left: 4%;
+  }
+  .item6
+  {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  }
+  .item7
+  {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  }
+  .item8
+  {
+  text-align: left;
+  grid-column-start: 5;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
+  .preview
+  {
+    max-height: 300px;
+    padding: 10px;
+  }
+  .headshot
+  {
+    max-height: 80%;
   }
   img
   {
     max-width: 100%;
-    height: auto;
+    max-height: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
   body {
     background-color:#36584c;
   }
   h1 {
+    text-align: center;
     color:#ffffff;
     font-style: bold;
     font-size: 325%;
@@ -21,6 +103,7 @@
     font-family: "Helvetica", sans-serif;
   }
   h2 {
+    text-align: center;
     color:#c0c0c0;
     font-style: bold;
     font-size: 225%;
@@ -35,6 +118,7 @@
     color:#00bc78;
     font-size: 120%;
     font-family: "Helvetica", sans-serif;
+    text-decoration: none;
   }
   li {
     display: block;
@@ -55,22 +139,105 @@
     margin-bottom: 0.7;
   }
 }
-@media screen and (max-width:400px)
+@media screen and (max-width:800px)
 {
-    .content
+    .title-grid-container
     {
-      grid-row: 3 / 4;
-      grid-column: 2 / 3;
+      display: grid;
+      column-gap: 1%;
+      row-gap: 0px;
+      padding-left: 5%;
+      margin-right: 5%;
+    }
+    .grid-container
+    {
+      display: grid;
+      column-gap: 50px;
+      row-gap: 50px;
+      padding-left: 10px;
+      margin-right: 10px;
+    }
+    .item1
+    {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    }
+    .item2
+    {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+    .item3
+    {
+    text-align: right;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    }
+    .item4
+    {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    }
+    .item5
+    {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    }
+    .item6
+    {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    }
+    .item7
+    {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    }
+    .item8
+    {
+    text-align: left;
+    grid-column-start: 5;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    .preview
+    {
+      max-height: 300px;
+      padding: 10px;
+    }
+    .headshot
+    {
+      max-height: 80%;
     }
     img
     {
       max-width: 100%;
       height: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   body {
     background-color:#36584c;
   }
   h1 {
+    text-align: center;
     color:#ffffff;
     font-style: bold;
     font-size: 325%;
@@ -78,6 +245,7 @@
     font-family: "Helvetica", sans-serif;
   }
   h2 {
+    text-align: center;
     color:#c0c0c0;
     font-style: bold;
     font-size: 225%;
@@ -92,6 +260,7 @@
     color:#00bc78;
     font-size: 120%;
     font-family: "Helvetica", sans-serif;
+    text-decoration: none;
   }
   li {
     display: block;

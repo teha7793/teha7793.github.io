@@ -1,4 +1,4 @@
-@media screen and (min-width:801px)
+@media only screen and (min-width:801px)
 {
   .title-grid-container
   {
@@ -139,7 +139,7 @@
     margin-bottom: 0.7;
   }
 }
-@media screen and (max-width:800px)
+@media only screen and (max-width:800px)
 {
     .title-grid-container
     {
@@ -205,7 +205,6 @@
     }
     .item8
     {
-    text-align: left;
     grid-row-start: 3;
     grid-row-end: 4;
     }

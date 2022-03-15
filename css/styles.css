@@ -196,31 +196,24 @@
     .item6
     {
     display: inline-block;
-    grid-column-start: 1;
-    grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 2;
     }
     .item7
     {
     display: inline-block;
-    grid-column-start: 1;
-    grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
     }
     .item8
     {
     text-align: left;
-    grid-column-start: 5;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
     }
     .preview
     {
-      max-height: 300px;
-      padding: 10px;
+      max-width: 100%;
     }
     .headshot
     {

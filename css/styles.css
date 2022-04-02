@@ -1,20 +1,21 @@
-button {
+button
+{
   transition: all 1000ms ease-in-out;
   font-size: 40px;
 }
 
-.was-clicked
+button.was-clicked
 {
   padding: 20px;
   color: rebeccapurple;
 }
 
-.button-2 {
+#button-2
+{
   transition: all 250ms ease-in-out;
-  font-size: 90px;
 }
 
-.was-clicked-2
+button.was-clicked-2
 {
   padding: 80px;
   color: orange;

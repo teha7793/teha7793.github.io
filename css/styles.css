@@ -1,3 +1,27 @@
+button {
+  transition: all 1000ms ease-in-out;
+  font-size: 40px;
+}
+
+.was-clicked
+{
+  padding: 20px;
+  color: rebeccapurple;
+}
+
+.button-2 {
+  transition: all 250ms ease-in-out;
+  font-size: 90px;
+}
+
+.was-clicked-2
+{
+  padding: 80px;
+  color: orange;
+}
+
+
+
 @media screen and (min-width:801px)
 {
   .title-grid-container

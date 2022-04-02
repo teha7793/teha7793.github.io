@@ -17,4 +17,4 @@ function windowLoaded()
   // events: mouseover, mouseleave, mousedown, mouseup
 }
 
-window.onload = windowLoaded;
+window.onload = windowLoaded();

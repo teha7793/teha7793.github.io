@@ -1,16 +1,16 @@
-const njbtn = document.querySelector('#js-new-quote');
-njbtn.addEventListener('click', getQuote;
+const nqbtn = document.querySelector('#js-new-quote');
+nqbtn.addEventListener('click', getQuote);
 
 async function getQuote() {
-  console.log("Quote button was clicked");
+  console.log("quote button was clicked");
   try {
     const response = await fetch(endpoint);
     if (!response.ok) {
       throw Error(response.statusText)
     }
     const json = await response.json();
-    console.log(json.quote);
-    displayQuote(json.quote);
+    console.log(json.activity);
+    displayQuote(json.activity);
 
   }
   catch(err) {
@@ -24,6 +24,6 @@ function displayQuote(quote) {
   quoteText.textContent = quote;
 }
 
-const endpoint = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+const endpoint = "https://www.boredapi.com/api/activity"
 
 //http://quotes.stormconsultancy.co.uk/random.json

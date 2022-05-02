@@ -75,7 +75,7 @@
 
 				// ASCII file
 
-				const loader = new STLLoader();
+				/*const loader = new STLLoader();
 				loader.load( '/models/FireLightSolid.stl', function ( geometry ) {
 
 					const material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
@@ -90,7 +90,25 @@
 
 					scene.add( mesh );
 
-				} );
+				} );*/
+
+        (new THREE.STLLoader()).load('/models/FireLightSolid.stl', function ( geometry ) {
+            var material = new THREE.MeshPhongMaterial({
+                color: 0xff5533,
+                specular: 100,
+                shininess: 100 });
+            var mesh = new THREE.Mesh(geometry, material);
+                scene.add(mesh);
+
+        var middle = new THREE.Vector3();
+        geometry.computeBoundingBox();
+        geometry.boundingBox.getCenter(middle);
+        mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
+
+        var largestDimension = Math.max(geometry.boundingBox.max.x,
+                                    geometry.boundingBox.max.y,
+                                    geometry.boundingBox.max.z)
+        camera.position.z = largestDimension * 1.5;
 
 
 				// Lights

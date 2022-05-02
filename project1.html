@@ -41,7 +41,7 @@
 			let camera, cameraTarget, scene, renderer;
 
 			init();
-			animate();
+
 
 			function init() {
 
@@ -105,7 +105,7 @@
           var largestDimension = Math.max(geometry.boundingBox.max.x,
                                       geometry.boundingBox.max.y,
                                       geometry.boundingBox.max.z)
-          camera.position.z = largestDimension * 2.5;
+          //camera.position.z = largestDimension * 2.5;
           //camera.position.x = largestDimension * 1.5;
           //camera.position.y = largestDimension * 1.5;
 
@@ -115,7 +115,7 @@
               renderer.render(scene, camera);
           };*/
 
-          //animate();
+          animate();
           });
 
           function animate() {

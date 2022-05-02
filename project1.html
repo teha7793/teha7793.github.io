@@ -92,7 +92,7 @@
           (new STLLoader()).load('/models/GuitarPickx70.stl', function ( geometry ) {
               var material = new THREE.MeshPhongMaterial({
                   color: 0x082161,
-                  specular: 100,
+                  specular: 50,
                   shininess: 50 });
               var mesh = new THREE.Mesh(geometry, material);
                   scene.add(mesh);
@@ -109,14 +109,43 @@
           //camera.position.x = largestDimension * 1.5;
           //camera.position.y = largestDimension * 1.5;
 
-          var animate = function () {
+          /*var animate = function () {
               requestAnimationFrame(animate);
               //controls.update();
               renderer.render(scene, camera);
-          };
+          };*/
 
-          animate();
+          //animate();
           });
+
+          function animate() {
+
+            requestAnimationFrame( animate );
+
+            render();
+            //stats.update();
+
+          }
+          function render() {
+
+            const timer = Date.now() * 0.0002;
+
+            if (window.innerWidth > 800) {
+              camera.position.x = Math.cos( timer ) * 25;
+              camera.position.z = Math.sin( timer ) * 25;
+            }
+            else {
+              camera.position.x = Math.cos( timer ) * 40;
+              camera.position.z = Math.sin( timer ) * 40;
+            }
+            //geometry.rotateY(0.05);
+
+            camera.lookAt( cameraTarget );
+
+            renderer.render( scene, camera );
+
+          }
+
 
           /*var controls = new THREE.OrbitControls(camera, renderer.domElement);
           controls.enableDamping = true;
@@ -184,34 +213,6 @@
 
 			}
 
-			function animate() {
-
-				requestAnimationFrame( animate );
-
-				render();
-				//stats.update();
-
-			}
-
-			function render() {
-
-				const timer = Date.now() * 0.0002;
-
-        if (window.innerWidth > 800) {
-          camera.position.x = Math.cos( timer ) * 25;
-          camera.position.z = Math.sin( timer ) * 25;
-        }
-        else {
-          camera.position.x = Math.cos( timer ) * 40;
-          camera.position.z = Math.sin( timer ) * 40;
-        }
-        //geometry.rotateY(0.05);
-
-				camera.lookAt( cameraTarget );
-
-				renderer.render( scene, camera );
-
-			}
 		</script>
       <br>
       <br>

@@ -69,8 +69,8 @@ animate();
 function windowLoaded()
 {
   console.log("loaded ok!");
-  document.getElementById('button-1').addEventListener('click', button1Clicked);
-  document.getElementById('button-2').addEventListener('mouseover', button2Clicked);
+  //document.getElementById('button-1').addEventListener('click', button1Clicked);
+  //document.getElementById('button-2').addEventListener('mouseover', button2Clicked);
   // events: mouseover, mouseleave, mousedown, mouseup
 }
 

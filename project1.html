@@ -116,18 +116,18 @@
               renderer.render(scene, camera);
           };*/
 
-          animate();
+          animate(largestDimension);
           });
 
-          function animate() {
+          function animate(largestDimension) {
 
             requestAnimationFrame( animate );
 
-            render();
+            render(largestDimension);
             //stats.update();
 
           }
-          function render() {
+          function render(largestDimension) {
 
             const timer = Date.now() * 0.0002;
 

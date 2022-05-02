@@ -107,7 +107,7 @@
                                       geometry.boundingBox.max.y,
                                       geometry.boundingBox.max.z)
 
-          console.log(largestDimension);
+          //console.log(largestDimension);
 
           //camera.position.z = largestDimension * 2.5;
           //camera.position.x = largestDimension * 1.5;
@@ -122,11 +122,11 @@
           animate(largestDimension);
           });
 
-          function animate(largestDimension) {
+          function animate(largestDimensionConst) {
 
             requestAnimationFrame( animate );
 
-            render(largestDimension);
+            render(largestDimensionConst);
             //stats.update();
 
           }

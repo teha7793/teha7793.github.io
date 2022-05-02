@@ -140,6 +140,10 @@
               camera.position.z = Math.sin( timer ) * 45;
             }
             //geometry.rotateY(0.05);
+            directionalLight1.position.x = camera.position.x;
+            directionalLight1.position.z = camera.position.z/2;
+            directionalLight2.position.x = camera.position.x/2;
+            directionalLight2.position.z = -camera.position.z;
 
             camera.lookAt( cameraTarget );
 
@@ -165,7 +169,7 @@
 				//addShadowedLight( camera.position.x/2, 1, - camera.position.z, 0xffaa00, 1 );
 
         let directionalLight1 = new THREE.DirectionalLight( 0xffffff, 2.75 );
-        directionalLight1.position.set( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );
+        directionalLight1.position.set( -50, 100, 20, 0xffffff, 2.75 );
         scene.add( directionalLight1 );
         //scene.add( light.target );
         directionalLight1.castShadow = true;

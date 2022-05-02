@@ -137,7 +137,7 @@
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth, window.innerWidth*(9/16) );
 				renderer.outputEncoding = THREE.sRGBEncoding;
 
 				renderer.shadowMap.enabled = true;

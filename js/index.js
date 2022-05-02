@@ -10,7 +10,7 @@ function button2Clicked()
   document.getElementById('button-2').classList.toggle('was-clicked-2');
 }
 
-function STLViewer(model, elementID) {
+/*function STLViewer(model, elementID) {
     var elem = document.getElementById(elementID)
 
 var camera = new THREE.PerspectiveCamera(70, elem.clientWidth/elem.clientHeight, 1, 1000);
@@ -25,7 +25,7 @@ camera.aspect = elem.clientWidth/elem.clientHeight;
 camera.updateProjectionMatrix();
 }, false);
 
-var controls = new THREE.OrbitControls(camera, renderer.domElement);
+/*var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.rotateSpeed = 0.05;
 controls.dampingFactor = 0.1;
@@ -62,7 +62,7 @@ var animate = function () {
 
 animate();
 });
-}
+}*/
 
 
 

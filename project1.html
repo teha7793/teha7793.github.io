@@ -55,7 +55,7 @@
 
 				scene = new THREE.Scene();
 				scene.background = new THREE.Color( 0x202020 );
-				scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
+				//scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
 
 				// Ground
 
@@ -135,8 +135,8 @@
               camera.position.z = Math.sin( timer ) * 25;
             }
             else {
-              camera.position.x = Math.cos( timer ) * 40;
-              camera.position.z = Math.sin( timer ) * 40;
+              camera.position.x = Math.cos( timer ) * 45;
+              camera.position.z = Math.sin( timer ) * 45;
             }
             //geometry.rotateY(0.05);
 
@@ -159,8 +159,8 @@
 
 				scene.add( new THREE.HemisphereLight( 0x68c6e3, 0x202020 ) );
 
-				addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
-				addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
+				addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 1.35 );
+				//addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
 				// renderer
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
@@ -188,6 +188,7 @@
 				const directionalLight = new THREE.DirectionalLight( color, intensity );
 				directionalLight.position.set( x, y, z );
 				scene.add( directionalLight );
+        //scene.add( light.target );
 
 				directionalLight.castShadow = true;
 

@@ -52,7 +52,7 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-				camera.position.set( 40, 50, 50);
+				camera.position.set( 40, 60, 70);
 
 				cameraTarget = new THREE.Vector3( 0, - 0.25, 0 );
 
@@ -108,7 +108,7 @@
           var largestDimension = Math.max(geometry.boundingBox.max.x,
                                       geometry.boundingBox.max.y,
                                       geometry.boundingBox.max.z)
-          camera.position.z = largestDimension * 1.5;
+          camera.position.z = largestDimension * 2.5;
           //camera.position.x = largestDimension * 1.5;
           //camera.position.y = largestDimension * 1.5;
 
@@ -210,8 +210,8 @@
 			}
 		</script>
     <div>
-    <canvas data-engine="three.js r140" width="926" height="1594" style="display: block; width: 463px; height: 797px;"></canvas>
-    <!--</div>
+    <!--<canvas data-engine="three.js r140" width="926" height="1594" style="display: block; width: 463px; height: 797px;"></canvas>
+    </div>
       <div id="model" style="width: 500px; height: 500px">
         <script type="text/javascript">
           window.onload = function() {

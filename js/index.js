@@ -1,3 +1,4 @@
+import * as THREE from 'three';
 
 function button1Clicked()
 {
@@ -13,8 +14,7 @@ function STLViewer(model, elementID) {
     var elem = document.getElementById(elementID)
   }
 
-var camera = new THREE.PerspectiveCamera(70,
-elem.clientWidth/elem.clientHeight, 1, 1000);
+var camera = new THREE.PerspectiveCamera(70, elem.clientWidth/elem.clientHeight, 1, 1000);
 
 var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(elem.clientWidth, elem.clientHeight);

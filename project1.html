@@ -4,8 +4,13 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="/js/index.js"></script>
+    <script src="/build/three.min.js"></script>
+    <script src="/examples/js/loaders/STLLoader.js"></script>
+    <script src="/examples/js/controls/OrbitControls.js"></script>
     <title>Aven Hart Portfolio</title>
   </head>
+
   <body>
     <div class="title-grid-container">
       <div class="item1"><br><br><a href="/index">Home</a></div>
@@ -17,6 +22,13 @@
         <div class="item6"><a href="/project1image1"><img src="img/WatchNarrow.png" alt="Aven" class="preview"></a><a href="/project1image1"><img src="img/WatchFull.png" alt="Aven" class="preview"></a></div>
         <div class="item7"><a href="/project1image1"><img src="img/WatchFull.png" alt="Aven" class="preview"></a><a href="/project1image1"><img src="img/WatchNarrow.png" alt="Aven" class="preview"></a></div>
         <div class="item8"><p>This is a watch I designed that does not have a full array of images or a proper description as of yet. Please check back soon.</p></div>
+        <div id="model" style="width: 500px; height: 500px">
+        <script type="text/javascript">
+          window.onload = function() {
+            STLViewer("/models/WatchUpdatev97Med2", "model")
+          }
+        </script>
+      </div>
       <br>
       <br>
   </body>

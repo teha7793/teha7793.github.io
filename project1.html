@@ -52,13 +52,13 @@
 				document.body.appendChild( container );
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
 				//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-				camera.position.set( 50, 100, 0);
+				camera.position.set( 0, 105, 0);
 
 				cameraTarget = new THREE.Vector3( 0, - 0.25, 0 );
 
 				scene = new THREE.Scene();
 				scene.background = new THREE.Color( 0x202020 );
-				scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
+				scene.fog = new THREE.FogExp2( 0x202020, 0.025 ); //new THREE.Fog( 0x508594, 2, 15 );
 
 				// Ground
 
@@ -199,7 +199,7 @@
 
 			function render() {
 
-				const timer = Date.now() * 0.0005;
+				const timer = Date.now() * 0.0002;
 
 				camera.position.x = Math.cos( timer ) * 3;
 				camera.position.z = Math.sin( timer ) * 3;
@@ -210,8 +210,8 @@
 
 			}
 		</script>
-    <div>
-    <!--<canvas data-engine="three.js r140" width="926" height="1594" style="display: block; width: 463px; height: 797px;"></canvas>
+    <!--<div>
+    <canvas data-engine="three.js r140" width="926" height="1594" style="display: block; width: 463px; height: 797px;"></canvas>
     </div>
       <div id="model" style="width: 500px; height: 500px">
         <script type="text/javascript">

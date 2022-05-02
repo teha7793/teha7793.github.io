@@ -89,10 +89,10 @@
 
 				} );*/
 
-          (new STLLoader()).load('/models/GuitarPickx70.stl', function ( geometry ) {
+          (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
               var material = new THREE.MeshStandardMaterial({
                   color: 0x003a5c,
-                  opacity: 0.88,
+                  opacity: 1,
                   roughness: 0.238,
                   metalness: 0.631});
               var mesh = new THREE.Mesh(geometry, material);

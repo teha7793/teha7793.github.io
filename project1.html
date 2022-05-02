@@ -136,7 +136,12 @@
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+        if (window.innerWidth > 800) {
+          renderer.setSize( window.innerWidth, window.innerHeight );
+        }
+        else {
+          renderer.setSize( window.innerWidth, window.innerHeight/2 );
+        }
 				renderer.outputEncoding = THREE.sRGBEncoding;
 
 				renderer.shadowMap.enabled = true;
@@ -197,8 +202,9 @@
 
 				const timer = Date.now() * 0.0002;
 
-				camera.position.x = Math.cos( timer ) * 25;
-				camera.position.z = Math.sin( timer ) * 25;
+				//camera.position.x = Math.cos( timer ) * 3;
+				//camera.position.z = Math.sin( timer ) * 3;
+        geometry.rotateY(0.05);
 
 				camera.lookAt( cameraTarget );
 

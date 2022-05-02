@@ -57,7 +57,7 @@
 				cameraTarget = new THREE.Vector3( 0, - 0.25, 0 );
 
 				scene = new THREE.Scene();
-				scene.background = new THREE.Color( 0x202020 );
+				scene.background = new THREE.Color( 0x00bc78 );
 				//scene.fog = new THREE.Fog( 0x72645b, 2, 15 );
 
 				// Ground
@@ -94,7 +94,7 @@
 
           (new STLLoader()).load('/models/FireLightSolid.stl', function ( geometry ) {
               var material = new THREE.MeshPhongMaterial({
-                  color: 0x00bc78,
+                  color: 0x202020,
                   specular: 100,
                   shininess: 100 });
               var mesh = new THREE.Mesh(geometry, material);

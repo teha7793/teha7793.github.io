@@ -96,7 +96,8 @@
               var material = new THREE.MeshPhongMaterial({
                   color: 0x202020,
                   specular: 100,
-                  shininess: 50 });
+                  shininess: 50,
+                  metalness: 50 });
               var mesh = new THREE.Mesh(geometry, material);
                   scene.add(mesh);
 
@@ -119,7 +120,7 @@
           };
 
           animate();
-          });
+        };);
 
           /*var controls = new THREE.OrbitControls(camera, renderer.domElement);
           controls.enableDamping = true;

@@ -52,7 +52,7 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-				camera.position.set( 60, 50, 50);
+				camera.position.set( 40, 50, 50);
 
 				cameraTarget = new THREE.Vector3( 0, - 0.25, 0 );
 
@@ -62,7 +62,7 @@
 
 				// Ground
 
-				const plane = new THREE.Mesh(
+				/*const plane = new THREE.Mesh(
 					new THREE.PlaneGeometry( 40, 40 ),
 					new THREE.MeshPhongMaterial( { color: 0x999999, specular: 0x101010 } )
 				);
@@ -70,7 +70,7 @@
 				plane.position.y = - 0.5;
 				scene.add( plane );
 
-				plane.receiveShadow = true;
+				plane.receiveShadow = true;*/
 
 
 				// ASCII file

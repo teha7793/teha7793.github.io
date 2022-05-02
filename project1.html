@@ -202,9 +202,9 @@
 
 				const timer = Date.now() * 0.0002;
 
-				//camera.position.x = Math.cos( timer ) * 3;
-				//camera.position.z = Math.sin( timer ) * 3;
-        geometry.rotateY(0.05);
+				camera.position.x = Math.cos( timer ) * 3;
+				camera.position.z = Math.sin( timer ) * 3;
+        //geometry.rotateY(0.05);
 
 				camera.lookAt( cameraTarget );
 

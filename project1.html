@@ -132,13 +132,13 @@
             const timer = Date.now() * 0.0002;
 
             if (window.innerWidth > 800) {
-              camera.position.x = Math.cos( timer ) * 30;
-              camera.position.z = Math.sin( timer ) * 30;
+              camera.position.x = Math.cos( timer ) * largestDimension*1.5;
+              camera.position.z = Math.sin( timer ) * largestDimension*1.5;
 
             }
             else {
-              camera.position.x = Math.cos( timer ) * 45;
-              camera.position.z = Math.sin( timer ) * 45;
+              camera.position.x = Math.cos( timer ) * largestDimension*2.25;
+              camera.position.z = Math.sin( timer ) * largestDimension*2.25;
             }
             //geometry.rotateY(0.05);
             directionalLight1.position.x = 5*camera.position.x;

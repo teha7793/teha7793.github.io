@@ -94,7 +94,7 @@
 
           (new STLLoader()).load('/models/FireLightSolid.stl', function ( geometry ) {
               var material = new THREE.MeshPhongMaterial({
-                  color: 0xff5533,
+                  color: 0x202020,
                   specular: 100,
                   shininess: 100 });
               var mesh = new THREE.Mesh(geometry, material);
@@ -112,21 +112,21 @@
 
           var animate = function () {
               requestAnimationFrame(animate);
-              controls.update();
+              //controls.update();
               renderer.render(scene, camera);
           };
 
           animate();
           });
 
-          var controls = new THREE.OrbitControls(camera, renderer.domElement);
+          /*var controls = new THREE.OrbitControls(camera, renderer.domElement);
           controls.enableDamping = true;
           controls.rotateSpeed = 0.05;
           controls.dampingFactor = 0.1;
           controls.enableZoom = true;
           controls.autoRotate = true;
-          controls.autoRotateSpeed = .75;
-          
+          controls.autoRotateSpeed = .75;*/
+
 				// Lights
 
 				scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );

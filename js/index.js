@@ -12,7 +12,6 @@ function button2Clicked()
 
 function STLViewer(model, elementID) {
     var elem = document.getElementById(elementID)
-  } 
 
 var camera = new THREE.PerspectiveCamera(70, elem.clientWidth/elem.clientHeight, 1, 1000);
 

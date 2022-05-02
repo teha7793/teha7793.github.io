@@ -104,7 +104,7 @@
           geometry.boundingBox.getCenter(middle);
           mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
 
-          var largestDimension = Math.max(geometry.boundingBox.max.x,
+          largestDimension = Math.max(geometry.boundingBox.max.x,
                                       geometry.boundingBox.max.y,
                                       geometry.boundingBox.max.z)
 
@@ -123,16 +123,16 @@
           animate(largestDimension);
           });
 
-          function animate(largestDimension) {
-            console.log(largestDimension);
+          function animate() {
+            //console.log(largestDimension);
             requestAnimationFrame( animate );
 
-            render(largestDimension);
+            render();
             //console.log(largestDimension);
             //stats.update();
 
           }
-          function render(largestDimension) {
+          function render() {
 
             const timer = Date.now() * 0.0002;
 

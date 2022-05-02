@@ -52,7 +52,7 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-				camera.position.set( 50, 50, 50);
+				//camera.position.set( 50, 50, 50);
 
 				cameraTarget = new THREE.Vector3( 0, - 0.25, 0 );
 
@@ -108,7 +108,7 @@
           var largestDimension = Math.max(geometry.boundingBox.max.x,
                                       geometry.boundingBox.max.y,
                                       geometry.boundingBox.max.z)
-          camera.position.z = largestDimension * 15;
+          camera.position.z = largestDimension * 5;
           camera.position.x = largestDimension * 1.5;
           camera.position.y = largestDimension * 1.5;
 

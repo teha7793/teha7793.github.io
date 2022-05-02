@@ -92,6 +92,7 @@
           (new STLLoader()).load('/models/GuitarPickx70.stl', function ( geometry ) {
               var material = new THREE.MeshStandardMaterial({
                   color: 0x003a5c,
+                  opacity: 0.88,
                   roughness: 0.238,
                   metalness: 0.631});
               var mesh = new THREE.Mesh(geometry, material);
@@ -131,8 +132,8 @@
             const timer = Date.now() * 0.0002;
 
             if (window.innerWidth > 800) {
-              camera.position.x = Math.cos( timer ) * 25;
-              camera.position.z = Math.sin( timer ) * 25;
+              camera.position.x = Math.cos( timer ) * 30;
+              camera.position.z = Math.sin( timer ) * 30;
 
             }
             else {
@@ -162,7 +163,7 @@
 
 				// Lights
 
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 1 ) );
+				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .25 ) );
         //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
 
 				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );

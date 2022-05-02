@@ -44,7 +44,6 @@ scene.add(new THREE.HemisphereLight(0xffffff, 1.5));
         shininess: 100 });
     var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
-  }
 
 var middle = new THREE.Vector3();
 geometry.computeBoundingBox();

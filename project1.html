@@ -97,6 +97,34 @@ var largestDimension;
 
 			} );*/
 
+      // Lights
+
+      scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .25 ) );
+      //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
+
+      //addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );
+      //addShadowedLight( camera.position.x/2, 1, - camera.position.z, 0xffaa00, 1 );
+
+      let directionalLight1 = new THREE.DirectionalLight( 0xffffff, 1.75 );
+      directionalLight1.position.set( -50, 100, 20);
+      scene.add( directionalLight1 );
+      //scene.add( light.target );
+      directionalLight1.castShadow = true;
+
+      let directionalLight2 = new THREE.DirectionalLight( 0xffffff, 1 );
+      directionalLight2.position.set( 50, 100, - 75);
+      scene.add( directionalLight2 );
+      directionalLight2.castShadow = true;
+
+      /*function addShadowedLight( x, y, z, color, intensity ) {
+
+        const directionalLight = new THREE.DirectionalLight( color, intensity );
+        directionalLight.position.set( x, y, z );
+        scene.add( directionalLight );
+        //scene.add( light.target );
+
+        directionalLight.castShadow = true;
+
       (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
 
 
@@ -144,6 +172,7 @@ var largestDimension;
           //stats.update();
 
         }
+
         function render() {
 
           const timer = Date.now() * 0.0002;
@@ -174,32 +203,13 @@ var largestDimension;
         }
 
 
-          var controls = new THREE.OrbitControls(camera, renderer.domElement);
+          /*var controls = new THREE.OrbitControls(camera, renderer.domElement);
           controls.enableDamping = true;
           controls.rotateSpeed = 0.05;
           controls.dampingFactor = 0.1;
           controls.enableZoom = true;
           controls.autoRotate = true;
-          controls.autoRotateSpeed = .75;
-
-				// Lights
-
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .25 ) );
-        //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
-
-				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );
-				//addShadowedLight( camera.position.x/2, 1, - camera.position.z, 0xffaa00, 1 );
-
-        let directionalLight1 = new THREE.DirectionalLight( 0xffffff, 1.75 );
-        directionalLight1.position.set( -50, 100, 20);
-        scene.add( directionalLight1 );
-        //scene.add( light.target );
-        directionalLight1.castShadow = true;
-
-        let directionalLight2 = new THREE.DirectionalLight( 0xffffff, 1 );
-        directionalLight2.position.set( 50, 100, - 75);
-        scene.add( directionalLight2 );
-        directionalLight2.castShadow = true;
+          controls.autoRotateSpeed = .75;*/
 
 				// renderer
 
@@ -222,15 +232,6 @@ var largestDimension;
 				window.addEventListener( 'resize', onWindowResize );
 
 			}
-
-			/*function addShadowedLight( x, y, z, color, intensity ) {
-
-				const directionalLight = new THREE.DirectionalLight( color, intensity );
-				directionalLight.position.set( x, y, z );
-				scene.add( directionalLight );
-        //scene.add( light.target );
-
-				directionalLight.castShadow = true;
 
 				const d = 1;
 				directionalLight.shadow.camera.left = - d;

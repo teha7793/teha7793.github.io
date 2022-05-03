@@ -61,7 +61,7 @@ var largestDimension;
 			document.body.appendChild( container );
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 			//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-			camera.position.set(largestDimension * 2.5, largestDimension * 1.5, largestDimension * 1.5);
+			camera.position.set(largestDimension, largestDimension, largestDimension);
 
 			cameraTarget = new THREE.Vector3( 0, 0, -5 );
 
@@ -260,7 +260,6 @@ var largestDimension;
 				renderer.setSize( window.innerWidth, window.innerHeight );
 
 			}
-
 		</script>
   </body>
 </html>

@@ -62,7 +62,7 @@ var largestDimension;
 			document.body.appendChild( container );
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 			//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-			camera.position.set(50, 50, 50);
+			camera.position.set(200, 200, 50);
 
 			cameraTarget = new THREE.Vector3( 0, 0, -5 );
 
@@ -106,7 +106,7 @@ var largestDimension;
 
 
           var material = new THREE.MeshPhysicalMaterial({
-              color: 0xff6e3d,
+              color: 0xff613d,
               roughness: 0.1,
               castShadow:true,
               receiveShadow: true,
@@ -185,7 +185,7 @@ var largestDimension;
 
 				// Lights
 
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .75 ) );
+				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 1.25 ) );
         //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
 
 				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );

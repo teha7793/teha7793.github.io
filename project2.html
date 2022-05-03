@@ -185,13 +185,13 @@ var largestDimension;
 
 				// Lights
 
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .75 ) );
+				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 1.75 ) );
         //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
 
 				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );
 				//addShadowedLight( camera.position.x/2, 1, - camera.position.z, 0xffaa00, 1 );
 
-        let directionalLight1 = new THREE.DirectionalLight( 0xffffff, 1.75 );
+        let directionalLight1 = new THREE.DirectionalLight( 0xffffff, 1. );
         directionalLight1.position.set( -50, 100, 20);
         scene.add( directionalLight1 );
         //scene.add( light.target );

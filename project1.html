@@ -202,7 +202,7 @@ var largestDimension;
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
-        renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.setSize( window.innerWidth, window.innerHeight*0.95 );
 				renderer.outputEncoding = THREE.sRGBEncoding;
 
 				renderer.shadowMap.enabled = true;

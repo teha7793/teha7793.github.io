@@ -92,7 +92,7 @@ var largestDimension;
 
 				} );*/
 
-          (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
+          (new STLLoader()).load('/models/MainBody.stl', function ( geometry ) {
               var material = new THREE.MeshStandardMaterial({
                   color: 0x003a5c,
                   opacity: .88,
@@ -140,8 +140,8 @@ var largestDimension;
             const timer = Date.now() * 0.0002;
 
             if (window.innerWidth > 800) {
-              camera.position.x = Math.cos( timer ) * largestDimension*1.5;
-              camera.position.z = Math.sin( timer ) * largestDimension*1.5;
+              camera.position.x = Math.cos( timer ) * largestDimension*1.75;
+              camera.position.z = Math.sin( timer ) * largestDimension*1.75;
               //console.log(camera.position.x);
               //console.log(largestDimension);
 

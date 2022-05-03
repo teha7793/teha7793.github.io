@@ -158,8 +158,8 @@ canvas
   }
   li {
     display: block;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
     /*border-style: solid;
     border-color: #00bc78;*/
     font-size: 100%;
@@ -174,8 +174,7 @@ canvas
     display:block;
     color:#00bc78;
     background-color:#00bc78;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     border-color: #00bc78;
   }
 }

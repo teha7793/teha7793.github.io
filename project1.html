@@ -127,7 +127,7 @@ var largestDimension;
 
           /*var animate = function () {
               requestAnimationFrame(animate);
-              //controls.update();
+              controls.update();
               renderer.render(scene, camera);
           };*/
 
@@ -137,7 +137,7 @@ var largestDimension;
         function animate() {
           //console.log(largestDimension);
           requestAnimationFrame( animate );
-
+          controls.update();
           render();
           //console.log(largestDimension);
           //stats.update();
@@ -173,13 +173,13 @@ var largestDimension;
         }
 
 
-          /*var controls = new THREE.OrbitControls(camera, renderer.domElement);
+          var controls = new THREE.OrbitControls(camera, renderer.domElement);
           controls.enableDamping = true;
           controls.rotateSpeed = 0.05;
           controls.dampingFactor = 0.1;
           controls.enableZoom = true;
           controls.autoRotate = true;
-          controls.autoRotateSpeed = .75;*/
+          controls.autoRotateSpeed = .75;
 
 				// Lights
 

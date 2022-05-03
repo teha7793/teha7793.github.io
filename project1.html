@@ -108,7 +108,7 @@ var largestDimension;
         var material = new THREE.MeshPhysicalMaterial({
             color: 0x00c774,
             ior: 1.5,
-            transmission: .90,
+            transmission: .97,
             attenuationColor : 0x00c774,
             attenuationDistance : 20,
             roughness: 0,
@@ -121,7 +121,7 @@ var largestDimension;
         var middle = new THREE.Vector3();
         geometry.computeBoundingBox();
         geometry.boundingBox.getCenter(middle);
-        mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
+        //mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
 
         largestDimension = Math.max(geometry.boundingBox.max.x,
                                     geometry.boundingBox.max.y,
@@ -160,11 +160,17 @@ var largestDimension;
           var middle = new THREE.Vector3();
           geometry.computeBoundingBox();
           geometry.boundingBox.getCenter(middle);
-          mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
+          //mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
 
-          largestDimension = Math.max(geometry.boundingBox.max.x,
-                                      geometry.boundingBox.max.y,
-                                      geometry.boundingBox.max.z)
+          if (largestDimension < Math.max(geometry.boundingBox.max.x,
+                                          geometry.boundingBox.max.y,
+                                          geometry.boundingBox.max.z))
+          {
+            largestDimension = Math.max(geometry.boundingBox.max.x,
+                                        geometry.boundingBox.max.y,
+                                        geometry.boundingBox.max.z)
+          }
+
 
           //console.log(largestDimension);
 

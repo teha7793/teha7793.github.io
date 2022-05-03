@@ -298,13 +298,15 @@ canvas
     display: block;
     margin: 5px;
     padding: 10px;
-    border-style: solid;
-    border-color: #00bc78;
+    /*border-style: solid;
+    border-color: #00bc78;*/
     font-size: 100%;
   }
   ol {
     margin: 1em;
+    margin-top: 0em;
     padding: 1em;
+    padding-top: 0em;
   }
   hr {
     display:block;

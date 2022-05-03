@@ -60,6 +60,8 @@ canvas
   {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
   }
   .item3
   {
@@ -118,6 +120,7 @@ canvas
   }
   img
   {
+    display: block;
     max-width: 100%;
     max-height: 50%;
     margin-left: auto;
@@ -154,22 +157,24 @@ canvas
   }
   li {
     display: block;
-    padding: 10px;
-    background-color: #003e27;
-    border-style: solid;
-    border-color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+    /*border-style: solid;
+    border-color: #00bc78;*/
     font-size: 100%;
   }
   ol {
     margin: 1em;
+    margin-top: 0em;
     padding: 1em;
+    padding-top: 0em;
   }
   hr {
     display:block;
     color:#00bc78;
     background-color:#00bc78;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-color: #00bc78;
   }
 }
@@ -254,6 +259,7 @@ canvas
     }
     img
     {
+      display: block;
       max-width: 100%;
       height: auto;
       margin-left: auto;
@@ -290,10 +296,10 @@ canvas
   }
   li {
     display: block;
+    margin: 5px;
     padding: 10px;
-    background-color: #003e27;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #00bc78;
     font-size: 100%;
   }
   ol {

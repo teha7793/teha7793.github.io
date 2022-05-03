@@ -93,6 +93,8 @@ var largestDimension;
 				} );*/
 
           (new STLLoader()).load('/models/MainBody.stl', function ( geometry ) {
+              THREE.Object3D.DefaultUp.set(0, 0, 1);
+              
               var material = new THREE.MeshStandardMaterial({
                   color: 0x003a5c,
                   opacity: .88,
@@ -102,14 +104,14 @@ var largestDimension;
               var mesh = new THREE.Mesh(geometry, material);
                   scene.add(mesh);
 
-          var middle = new THREE.Vector3();
-          geometry.computeBoundingBox();
-          geometry.boundingBox.getCenter(middle);
-          mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
+              var middle = new THREE.Vector3();
+              geometry.computeBoundingBox();
+              geometry.boundingBox.getCenter(middle);
+              mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
 
-          largestDimension = Math.max(geometry.boundingBox.max.x,
-                                      geometry.boundingBox.max.y,
-                                      geometry.boundingBox.max.z)
+              largestDimension = Math.max(geometry.boundingBox.max.x,
+                                          geometry.boundingBox.max.y,
+                                          geometry.boundingBox.max.z)
 
           //console.log(largestDimension);
 

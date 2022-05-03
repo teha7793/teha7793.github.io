@@ -53,6 +53,7 @@ var largestDimension;
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 				//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
 				camera.position.set(0, 15, 0);
+        THREE.Object3D.DefaultUp.set(0, 0, 1);
 
 				cameraTarget = new THREE.Vector3( 0, 0, 0 );
 
@@ -93,7 +94,6 @@ var largestDimension;
 				} );*/
 
           (new STLLoader()).load('/models/MainBody.stl', function ( geometry ) {
-              THREE.Object3D.DefaultUp.set(0, 0, 1);
               geometry.computeVertexNormals(true);
 
               var material = new THREE.MeshStandardMaterial({

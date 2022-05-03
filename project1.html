@@ -43,6 +43,8 @@ var largestDimension;
 
     import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
 
+    import { RoomEnvironment } from '../../examples/jsm/environments/RoomEnvironment.js';
+
     //import { PointerLockControls } from "https://threejs.org/examples/jsm/controls/PointerLockControls.js";
 
 		import { STLLoader } from '/modules/STLLoader.js';
@@ -68,6 +70,7 @@ var largestDimension;
 
 			scene = new THREE.Scene();
 			scene.background = new THREE.Color( 0x202020 );
+      scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 			//scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
 
 			// Ground

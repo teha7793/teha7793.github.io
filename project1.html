@@ -106,11 +106,12 @@ var largestDimension;
 
 
           var material = new THREE.MeshPhysicalMaterial({
-              color: 0xf76331,
+              color: 0xff8961,
               roughness: 0.1,
               castShadow:true,
               receiveShadow: true,
-              metalness: .985});
+              flatShading: false,
+              metalness: .99});
           var mesh = new THREE.Mesh(geometry, material);
               scene.add(mesh);
 

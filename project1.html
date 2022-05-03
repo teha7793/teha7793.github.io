@@ -68,14 +68,14 @@ var largestDimension;
 			cameraTarget = new THREE.Vector3( 0, 0, -5 );
 
 			scene = new THREE.Scene();
-			scene.background = new THREE.Color( 0x202020 );
-			//scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
+			scene.background = new THREE.Color( 0x0a0a0a );
+			//scene.fog = new THREE.FogExp2( 0x0a0a0a, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
 
 			// Ground
 
 			/*const plane = new THREE.Mesh(
 				new THREE.PlaneGeometry( 40, 40 ),
-				new THREE.MeshPhongMaterial( { color: 0x202020, specular: 0x101010 } )
+				new THREE.MeshPhongMaterial( { color: 0x0a0a0a, specular: 0x101010 } )
 			);
 			plane.rotation.x = - Math.PI / 2;
 			plane.position.y = - 0.5;
@@ -235,7 +235,7 @@ var largestDimension;
 
 				// Lights
 
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 1.25 ) );
+				scene.add( new THREE.HemisphereLight( 0xffffff, 0x0a0a0a, 1.25 ) );
         //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
 
 				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );

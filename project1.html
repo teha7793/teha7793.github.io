@@ -147,20 +147,20 @@ var largestDimension;
 
             if (window.innerWidth > 800) {
               camera.position.x = Math.cos( timer ) * largestDimension*1.75;
-              camera.position.z = Math.sin( timer ) * largestDimension*1.75;
+              camera.position.y = Math.sin( timer ) * largestDimension*1.75;
               //console.log(camera.position.x);
               //console.log(largestDimension);
 
             }
             else {
               camera.position.x = Math.cos( timer ) * largestDimension*2.25;
-              camera.position.z = Math.sin( timer ) * largestDimension*2.25;
+              camera.position.y = Math.sin( timer ) * largestDimension*2.25;
             }
             //geometry.rotateY(0.05);
             directionalLight1.position.x = 5*camera.position.x;
-            directionalLight1.position.z = 5*camera.position.z/2;
+            directionalLight1.position.y = 5*camera.position.y/2;
             directionalLight2.position.x = 5*camera.position.x/2;
-            directionalLight2.position.z = -5*camera.position.z;
+            directionalLight2.position.y = -5*camera.position.y;
 
             camera.lookAt( cameraTarget );
 

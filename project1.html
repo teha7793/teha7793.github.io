@@ -70,8 +70,6 @@ var largestDimension;
 
 			scene = new THREE.Scene();
 			scene.background = new THREE.Color( 0x202020 );
-      const pmremGenerator = new THREE.PMREMGenerator( renderer );
-      scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 			//scene.fog = new THREE.FogExp2( 0x202020, 0.0025 ); //new THREE.Fog( 0x508594, 2, 15 );
 
 			// Ground
@@ -261,6 +259,9 @@ var largestDimension;
 				renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( window.innerWidth, window.innerHeight*0.97 );
 				renderer.outputEncoding = THREE.sRGBEncoding;
+
+        const pmremGenerator = new THREE.PMREMGenerator( renderer );
+        scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 
 				renderer.shadowMap.enabled = true;
 

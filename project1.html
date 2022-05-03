@@ -102,6 +102,46 @@ var largestDimension;
 
 			} );*/
 
+      (new STLLoader()).load('/models/Glass.stl', function ( geometry ) {
+
+
+        var material = new THREE.MeshPhysicalMaterial({
+            color: 0x00c774,
+            ior: 1.5,
+            transmission: .90,
+            attenuationColor : 0x00c774,
+            attenuationDistance : 20,
+            roughness: 0,
+            metalness: 0});
+        var mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+
+        geometry.computeVertexNormals(true);
+
+        var middle = new THREE.Vector3();
+        geometry.computeBoundingBox();
+        geometry.boundingBox.getCenter(middle);
+        mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-middle.x, -middle.y, -middle.z ) );
+
+        largestDimension = Math.max(geometry.boundingBox.max.x,
+                                    geometry.boundingBox.max.y,
+                                    geometry.boundingBox.max.z)
+
+        //console.log(largestDimension);
+
+        //camera.position.z = largestDimension * 2.5;
+        //camera.position.x = largestDimension * 1.5;
+        //camera.position.y = largestDimension * 1.5;
+
+        /*var animate = function () {
+            requestAnimationFrame(animate);
+            //controls.update();
+            renderer.render(scene, camera);
+        };*/
+
+        //animate();
+      });
+
       (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
 
 
@@ -138,7 +178,7 @@ var largestDimension;
               renderer.render(scene, camera);
           };*/
 
-          animate(largestDimension);
+          animate();
         });
 
         function animate() {

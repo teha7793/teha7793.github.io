@@ -23,7 +23,8 @@ button.was-clicked-2
 
 canvas
 {
-  align: center;
+  justify-items: center;
+  justify: center;
 }
 
 

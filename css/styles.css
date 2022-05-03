@@ -21,7 +21,7 @@ button.was-clicked-2
   color: orange;
 }
 
-renderer.domElement
+canvas
 {
   align: center;
 }

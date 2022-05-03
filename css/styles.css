@@ -205,7 +205,6 @@ max-height: 90%;
       justify-items: center;
       display: grid;
       column-gap: 50px;
-      row-gap: 50px;
       padding-left: 10px;
       margin-right: 10px;
     }
@@ -264,6 +263,8 @@ max-height: 90%;
     .preview
     {
       max-width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     img
     {

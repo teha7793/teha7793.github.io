@@ -21,6 +21,11 @@ button.was-clicked-2
   color: orange;
 }
 
+renderer.domElement
+{
+  align: center;
+}
+
 
 
 @media screen and (min-width:801px)
@@ -36,7 +41,6 @@ button.was-clicked-2
   }
   .grid-container
   {
-
     display: grid;
     column-gap: 1%;
     row-gap: 0px;

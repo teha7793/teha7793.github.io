@@ -172,15 +172,6 @@ var largestDimension;
 
         }
 
-
-          var controls = new THREE.OrbitControls(camera, renderer.domElement);
-          controls.enableDamping = true;
-          controls.rotateSpeed = 0.05;
-          controls.dampingFactor = 0.1;
-          controls.enableZoom = true;
-          controls.autoRotate = true;
-          controls.autoRotateSpeed = .75;
-
 				// Lights
 
 				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, .25 ) );
@@ -210,6 +201,14 @@ var largestDimension;
 				renderer.shadowMap.enabled = true;
 
 				container.appendChild( renderer.domElement );
+
+        var controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.rotateSpeed = 0.05;
+        controls.dampingFactor = 0.1;
+        controls.enableZoom = true;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = .75;
 
 				// stats
 

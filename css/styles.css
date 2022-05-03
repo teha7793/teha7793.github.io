@@ -71,6 +71,12 @@ padding-bottom: 10px;
 max-height: 90%;
 }
 
+.headshot
+{
+  max-height: 50%;
+  padding-top: 10px;
+}
+
 
 @media screen and (min-width:801px)
 {
@@ -156,10 +162,6 @@ max-height: 90%;
   {
     max-height: 300px;
     padding: 10px;
-  }
-  .headshot
-  {
-    max-height: 50%;
   }
   img
   {
@@ -262,10 +264,6 @@ max-height: 90%;
     .preview
     {
       max-width: 100%;
-    }
-    .headshot
-    {
-      max-height: 50%;
     }
     img
     {

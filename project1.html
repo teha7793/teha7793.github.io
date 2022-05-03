@@ -108,12 +108,12 @@ var largestDimension;
         var material = new THREE.MeshPhysicalMaterial({
             color: 0x00c774,
             ior: 1.5,
-            transmission: .97,
+            transmission: .92,
             attenuationColor : 0x00c774,
-            attenuationDistance : 20,
+            attenuationDistance : 5,
             reflectivity: 1,
-            sheen: .5,
-            sheenColor: 0x00c774,
+            //sheen: .5,
+            //sheenColor: 0x00c774,
             roughness: 0,
             metalness: 0});
         var mesh = new THREE.Mesh(geometry, material);

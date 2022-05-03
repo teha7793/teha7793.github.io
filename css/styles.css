@@ -27,6 +27,43 @@ canvas
   justify: center;
 }
 
+h1 {
+  text-align: center;
+  color:#00bc78;
+  font-weight: bold;
+  font-size: 325%;
+  text-align: center;
+  font-family: "Futura", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color:#008f5b;
+  font-weight: bold;
+  font-size: 225%;
+  font-family:	"Futura", sans-serif;
+}
+
+a {
+  color:#00bc78;
+  font-size: 120%;
+  font-family: "Futura", sans-serif;
+  text-decoration: none;
+}
+
+hr {
+  display:block;
+  margin: 10px;
+  border-color: #008f5b;
+}
+
+.item9
+{
+padding: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+max-height: 90%;
+}
 
 
 @media screen and (min-width:801px)
@@ -131,31 +168,10 @@ canvas
   body {
     background-color:#202020;
   }
-  h1 {
-    text-align: center;
-    color:#ffffff;
-    font-weight: bold;
-    font-size: 325%;
-    text-align: center;
-    font-family: "Futura", sans-serif;
-  }
-  h2 {
-    text-align: center;
-    color:#c0c0c0;
-    font-weight: bold;
-    font-size: 225%;
-    font-family:	"Futura", sans-serif;
-  }
   p {
     color:#ffffff;
     font-size: 120%;
     font-family: 	"Futura", sans-serif;
-  }
-  a {
-    color:#00bc78;
-    font-size: 120%;
-    font-family: "Futura", sans-serif;
-    text-decoration: none;
   }
   li {
     display: block;
@@ -170,13 +186,6 @@ canvas
     margin-top: 0em;
     padding: 1em;
     padding-top: 0em;
-  }
-  hr {
-    display:block;
-    color:#00bc78;
-    background-color:#00bc78;
-    margin: 10px;
-    border-color: #00bc78;
   }
 }
 @media screen and (max-width:800px)
@@ -270,31 +279,10 @@ canvas
   body {
     background-color:#202020;
   }
-  h1 {
-    text-align: center;
-    color:#ffffff;
-    font-weight: bold;
-    font-size: 325%;
-    text-align: center;
-    font-family: "Futura", sans-serif;
-  }
-  h2 {
-    text-align: center;
-    color:#c0c0c0;
-    font-weight: bold;
-    font-size: 225%;
-    font-family:	"Futura", sans-serif;
-  }
   p {
     color:#ffffff;
     font-size: 120%;
     font-family: 	"Futura", sans-serif;
-  }
-  a {
-    color:#00bc78;
-    font-size: 120%;
-    font-family: "Futura", sans-serif;
-    text-decoration: none;
   }
   li {
     display: block;
@@ -309,13 +297,5 @@ canvas
     margin-top: 0em;
     padding: 1em;
     padding-top: 0em;
-  }
-  hr {
-    display:block;
-    color:#00bc78;
-    background-color:#00bc78;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-color: #00bc78;
   }
 }

@@ -41,7 +41,7 @@ var largestDimension;
 
     import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
 
-    import { PointerLockControls } from "https://threejs.org/examples/jsm/controls/PointerLockControls.js";
+    //import { PointerLockControls } from "https://threejs.org/examples/jsm/controls/PointerLockControls.js";
 
 		import { STLLoader } from '/modules/STLLoader.js';
 
@@ -155,7 +155,7 @@ var largestDimension;
             camera.position.y = Math.sin( timer ) * largestDimension*1.5;*/
             //camera.position.x = largestDimension*1.5;
             //camera.position.y = largestDimension*1.5;
-            camera.position.z = largestDimension*0.6;
+            //camera.position.z = largestDimension*0.6;
             //console.log(camera.position.x);
             //console.log(largestDimension);
 
@@ -165,7 +165,7 @@ var largestDimension;
             camera.position.y = Math.sin( timer ) * largestDimension*3;*/
             //camera.position.x = Math.cos( timer ) * largestDimension*3;
             //camera.position.y = Math.sin( timer ) * largestDimension*3;
-            camera.position.z = largestDimension*0.5;
+            //camera.position.z = largestDimension*0.5;
           }
           //geometry.rotateY(0.05);
           directionalLight1.position.x = 5*camera.position.x;
@@ -210,12 +210,12 @@ var largestDimension;
 				container.appendChild( renderer.domElement );
 
         controls = new OrbitControls(camera, renderer.domElement);
-        /*controls.enableDamping = true;
+        controls.enableDamping = true;
         controls.rotateSpeed = 0.05;
         controls.dampingFactor = 0.1;
         controls.enableZoom = true;
         controls.autoRotate = true;
-        controls.autoRotateSpeed = .75;*/
+        controls.autoRotateSpeed = .75;
 
 				// stats
 

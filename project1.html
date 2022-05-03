@@ -39,6 +39,8 @@ var largestDimension;
 
 			import { STLLoader } from '/modules/STLLoader.js';
 
+      THREE.Object3D.DefaultUp.set(0, 0, 1);
+
 			let container;// stats;
 
 			let camera, cameraTarget, scene, renderer;
@@ -93,8 +95,7 @@ var largestDimension;
 				} );*/
 
           (new STLLoader()).load('/models/MainBody.stl', function ( geometry ) {
-              THREE.Object3D.DefaultUp.set(0, 0, 1);
-              geometry.computeVertexNormals(true);
+
 
               var material = new THREE.MeshStandardMaterial({
                   color: 0x003a5c,
@@ -104,6 +105,8 @@ var largestDimension;
                   metalness: 0.631});
               var mesh = new THREE.Mesh(geometry, material);
                   scene.add(mesh);
+
+              geometry.computeVertexNormals(true);
 
               var middle = new THREE.Vector3();
               geometry.computeBoundingBox();

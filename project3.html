@@ -182,7 +182,7 @@ var largestDimension;
           //geometry.rotateY(0.05);
           directionalLight1.position.x = 5*camera.position.x-300;
           directionalLight1.position.y = camera.position.y;
-          directionalLight2.position.x = 5*camera.position.x/2;
+          directionalLight2.position.x = (5*camera.position.x/2)+300;
           directionalLight2.position.y = -5*camera.position.y;
 
           camera.lookAt( cameraTarget );
@@ -193,7 +193,7 @@ var largestDimension;
 
 				// Lights
 
-				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 1.25 ) );
+				scene.add( new THREE.HemisphereLight( 0xffffff, 0x202020, 3.25 ) );
         //scene.add(new THREE.AmbientLight( 0xfff6e5 ));
 
 				//addShadowedLight( camera.position.x, 1, camera.position.z, 0xffffff, 2.75 );

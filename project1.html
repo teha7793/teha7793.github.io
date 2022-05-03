@@ -60,7 +60,7 @@ var largestDimension;
 			document.body.appendChild( container );
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 			//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-			//camera.position.set(0, 12, 0);
+			camera.position.set(20, 20, 20);
 
 			cameraTarget = new THREE.Vector3( 0, 0, -5 );
 
@@ -210,10 +210,10 @@ var largestDimension;
 				container.appendChild( renderer.domElement );
 
         controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
+        /*controls.enableDamping = true;
         controls.rotateSpeed = 0.05;
         controls.dampingFactor = 0.1;
-        controls.enableZoom = true;
+        controls.enableZoom = true;*/
         controls.autoRotate = true;
         controls.autoRotateSpeed = .75;
 

@@ -104,9 +104,12 @@ var largestDimension;
       (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
 
 
-          var material = new THREE.MeshStandardMaterial({
-              color: 0x003a5c,
-              opacity: .88,
+          var material = new THREE.MeshPhysicalMaterial({
+              color: 0x00279c,
+              ior: 1.5,
+              transmission: .80,
+              attenuationColor : 0x00279c,
+              attenuationDistance : 20,
               roughness: 0.238,
               metalness: 0.631});
           var mesh = new THREE.Mesh(geometry, material);

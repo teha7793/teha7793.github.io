@@ -123,6 +123,7 @@ max-height: 90%;
   }
   .item4
   {
+  max-width: 90%;
   text-align: right;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -231,6 +232,7 @@ max-height: 90%;
     }
     .item4
     {
+    max-width: 90%;
     text-align: left;
     grid-column-start: 1;
     grid-column-end: 1;

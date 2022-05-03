@@ -121,7 +121,8 @@ canvas
   }
   img
   {
-    display: block;
+    display: inline;
+    vertical-align: middle;
     max-width: 100%;
     max-height: 50%;
     margin-left: auto;
@@ -259,7 +260,8 @@ canvas
     }
     img
     {
-      display: block;
+      display: inline;
+      vertical-align: middle;
       max-width: 100%;
       height: auto;
       margin-left: auto;

@@ -46,7 +46,7 @@ var largestDimension;
 
 		import { STLLoader } from '/modules/STLLoader.js';
 
-    THREE.Object3D.DefaultUp.set(0, 0, 1);
+    THREE.Object3D.DefaultUp.set(0, 1, 0);
 
 		let container;// stats;
 
@@ -61,7 +61,7 @@ var largestDimension;
 			document.body.appendChild( container );
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 			//camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 1, 15 );
-			camera.position.set(50, 50, 50);
+			camera.position.set(20, 20, 20);
 
 			cameraTarget = new THREE.Vector3( 0, 0, -5 );
 
@@ -156,7 +156,7 @@ var largestDimension;
             camera.position.y = Math.sin( timer ) * largestDimension*1.5;*/
             //camera.position.x = largestDimension*1.5;
             //camera.position.y = largestDimension*1.5;
-            camera.position.z = largestDimension*0.5;
+            //camera.position.z = largestDimension*0.5;
             //console.log(camera.position.x);
             //console.log(largestDimension);
 
@@ -166,7 +166,7 @@ var largestDimension;
             camera.position.y = Math.sin( timer ) * largestDimension*3;*/
             //camera.position.x = Math.cos( timer ) * largestDimension*3;
             //camera.position.y = Math.sin( timer ) * largestDimension*3;
-            camera.position.z = largestDimension*0.5;
+            //camera.position.z = largestDimension*0.5;
           }
           //geometry.rotateY(0.05);
           directionalLight1.position.x = 5*camera.position.x;

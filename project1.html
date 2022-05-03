@@ -46,7 +46,7 @@ var largestDimension;
 
 		let container;// stats;
 
-		let camera, cameraTarget, scene, renderer;
+		let camera, cameraTarget, scene, renderer, controls;
 
 		init();
 
@@ -138,7 +138,7 @@ var largestDimension;
         function animate() {
           //console.log(largestDimension);
           requestAnimationFrame( animate );
-          controls.update();
+          //controls.update();
           render();
           //console.log(largestDimension);
           //stats.update();

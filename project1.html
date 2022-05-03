@@ -39,13 +39,15 @@ var largestDimension;
 
 		import * as THREE from '/modules/three.module.js';
 
+    import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
+
 		import { STLLoader } from '/modules/STLLoader.js';
 
     THREE.Object3D.DefaultUp.set(0, 0, 1);
 
 		let container;// stats;
 
-		let camera, cameraTarget, scene, renderer;
+		let camera, cameraTarget, scene, renderer, controls;
 
 		init();
 
@@ -202,7 +204,7 @@ var largestDimension;
 
 				container.appendChild( renderer.domElement );
 
-        var controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.rotateSpeed = 0.05;
         controls.dampingFactor = 0.1;

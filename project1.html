@@ -260,8 +260,8 @@ var largestDimension;
         renderer.setSize( window.innerWidth, window.innerHeight*0.97 );
 				renderer.outputEncoding = THREE.sRGBEncoding;
 
-        const pmremGenerator = new THREE.PMREMGenerator( renderer );
-        scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
+        //const pmremGenerator = new THREE.PMREMGenerator( renderer );
+        //scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
 
 				renderer.shadowMap.enabled = true;
 

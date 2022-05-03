@@ -123,7 +123,7 @@ var largestDimension;
         scene.add( directionalLight );
         //scene.add( light.target );
 
-        directionalLight.castShadow = true;
+        directionalLight.castShadow = true;*/
 
       (new STLLoader()).load('/models/Copper.stl', function ( geometry ) {
 
@@ -160,8 +160,8 @@ var largestDimension;
               renderer.render(scene, camera);
           };*/
 
-          animate();
-        };
+          animate(largestDimension);
+        });
 
         function animate() {
           //console.log(largestDimension);

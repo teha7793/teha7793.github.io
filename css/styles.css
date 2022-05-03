@@ -44,6 +44,12 @@ h2 {
   font-family:	"Futura", sans-serif;
 }
 
+p {
+  color:#ffffff;
+  font-size: 120%;
+  font-family: 	"Futura", sans-serif;
+}
+
 a {
   color:#00bc78;
   font-size: 120%;
@@ -120,7 +126,6 @@ max-height: 90%;
   max-height: 100%;
   grid-column-start: 2;
   grid-column-end: 3;
-  padding-left: 4%;
   }
   .item6
   {
@@ -167,11 +172,6 @@ max-height: 90%;
   }
   body {
     background-color:#202020;
-  }
-  p {
-    color:#ffffff;
-    font-size: 120%;
-    font-family: 	"Futura", sans-serif;
   }
   li {
     display: block;
@@ -278,11 +278,6 @@ max-height: 90%;
     }
   body {
     background-color:#202020;
-  }
-  p {
-    color:#ffffff;
-    font-size: 120%;
-    font-family: 	"Futura", sans-serif;
   }
   li {
     display: block;

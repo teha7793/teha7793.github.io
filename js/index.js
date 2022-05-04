@@ -1,12 +1,12 @@
 //import * as THREE from 'three';
 
-const nqbtn = document.querySelector('preview');
+/*const nqbtn = document.querySelector('preview');
 nqbtn.addEventListener('click', PreviewClicked);
 
 async function previewClicked()
 {
   document.getElementsByClassName('preview').toggle('was-clicked');
-}
+}*/
 
 
 

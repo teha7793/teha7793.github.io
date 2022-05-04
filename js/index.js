@@ -1,12 +1,14 @@
 //import * as THREE from 'three';
 
+const nqbtn = document.querySelector('preview');
+nqbtn.addEventListener('click', PreviewClicked);
+
 async function previewClicked()
 {
   document.getElementsByClassName('preview').toggle('was-clicked');
 }
 
-//const nqbtn = document.querySelector('#js-new-quote');
-.preview.addEventListener('click', PreviewClicked);
+
 
 //function button2Clicked()
 //{

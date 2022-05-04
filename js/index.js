@@ -1,14 +1,17 @@
 //import * as THREE from 'three';
 
-function button1Clicked()
+async function previewClicked()
 {
-  document.getElementById('button-1').classList.toggle('was-clicked');
+  document.getElementsByClassName('preview').toggle('was-clicked');
 }
 
-function button2Clicked()
-{
-  document.getElementById('button-2').classList.toggle('was-clicked-2');
-}
+//const nqbtn = document.querySelector('#js-new-quote');
+.preview.addEventListener('click', PreviewClicked);
+
+//function button2Clicked()
+//{
+//  document.getElementById('button-2').classList.toggle('was-clicked-2');
+//}
 
 /*function STLViewer(model, elementID) {
     var elem = document.getElementById(elementID)

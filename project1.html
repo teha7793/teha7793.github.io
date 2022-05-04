@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<script>
-var largestDimension;
-</script>
-
 <html lang="en" dir="ltr">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
@@ -22,12 +18,17 @@ var largestDimension;
     </div>
     <hr>
       <div class="grid-container">
+        <div class="item6"><img src="img/Copper1.png" alt="Watch" class="preview" onclick="previewClicked()"><img src="img/Copper2.png" alt="GuitarPick" class="preview" onclick="previewClicked()">
         <div class="item6"><a href="/project1image1"><img src="img/Copper1.png" alt="Watch" class="preview"></a><a href="/project1image1"><img src="img/Copper2.png" alt="GuitarPick" class="preview"></a></div>
         <div class="item7"><a href="/project1image1"><img src="img/Copper3.png" alt="Watch" class="preview"></a><a href="/project1image1"><img src="img/Copper4.png" alt="GuitarPick" class="preview"></a></div>
-        <div class="item8"><p>This is a fancy shape I designed for a friend. He hoped to use it for a computer generated music video that would be built in unity, but I don't believe it materialized.</p></div>
+        <div class="item8"><p>This is a fancy shape I designed for a friend. He hoped to use it for a computer generated music video that would be built in unity, but I don't believe the video materialized.</p></div>
       </div>
     <hr>
     <script async="" src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script>
+      var largestDimension;
+    </script>
 
     <script type="importmap">
 		{
@@ -37,6 +38,7 @@ var largestDimension;
 		}
 
 	  </script>
+
     <script type="module">
 
 		import * as THREE from '/modules/three.module.js';
